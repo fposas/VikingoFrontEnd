@@ -1,1 +1,120 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '@angular/material/prebuilt-themes/azure-blue.css';
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'assets/color/blue.css';
+
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background: rgba(60, 59, 167, 0.5) !important;
+}
+
+.base {
+  background-color: #e99999;
+}
+
+.primary {
+  background-color: #428ebb !important;
+  color: white !important;
+}
+
+.secondary {
+  background-color: #f44336;
+}
+
+.error {
+  background-color: #b00020;
+}
+
+.sucess {
+  background-color: #99aa00;
+}
+
+
+.nav-bar-lenght {
+  width: 20% !important;
+}
+
+.h-100 {
+  height: 90vh !important;
+}
+
+.text-bold {
+  font: bold;
+}
+.container-carousel {
+  display: grid;
+  grid-gap: 5px;
+  justify-content: stretch;
+  align-content: normal;
+}
+/* estilos de los buscadorse de serrvios */
+.container-search{
+  display: grid;
+  grid-gap: 5px;
+  justify-content: stretch;
+  align-content: normal;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "filter pagination search"
+                        "filter travel travel";
+}
+.container-search > div {
+  padding: 1em;
+}
+
+.filter {
+  grid-area: filter;
+  background: #b6d7a8;
+}
+
+.search {
+  grid-area: search;
+  background: #d9d2e9;
+}
+
+.pagination {
+  grid-area: pagination;
+  background: #d0e0e3;
+}
+
+.travel {
+  grid-area: travel;
+  background: #fff2cc;
+}
+
+@media screen and (max-width: 500px) {
+  .container-search{
+    display: grid;
+    grid-gap: 5px;
+    justify-content: stretch;
+    align-content: stretch;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "search"
+                          "pagination"
+                          "travel";
+  }
+
+  .filter{
+    display: none;
+  }
+}
+
+/* Videos */
+
+.video-container {
+  /* max-width: 100%; */
+  /* margin: 5px auto; */
+  text-align: center;
+  height: 90vh;
+}
+
+video {
+  width: 100%;  /* Ajusta el video al contenedor */
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}

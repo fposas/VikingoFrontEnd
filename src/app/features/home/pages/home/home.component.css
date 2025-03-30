@@ -1,0 +1,36 @@
+/* .carrusel-container {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.carrusel-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+button {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+button:hover {
+  background: rgba(0, 0, 0, 0.8);
+} */
+

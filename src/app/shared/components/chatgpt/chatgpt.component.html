@@ -1,0 +1,15 @@
+<div class="chat-container">
+    @if (loading) {
+        <div>Cargando...</div>
+    }
+    @if (!loading && botResponse) {
+        <div class="response">
+            <strong>ChatGPT:</strong> {{ botResponse }}
+        </div>
+    }
+    <div class="input-container">
+      <input [(ngModel)]="userMessage" placeholder="Escribe tu mensaje..." />
+      <button (click)="sendMessage()">Enviar</button>
+    </div>
+  </div>
+  
